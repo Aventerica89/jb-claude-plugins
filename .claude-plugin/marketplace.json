@@ -1,0 +1,17 @@
+{
+  "name": "jb-claude-plugins",
+  "owner": {
+    "name": "JBMD Creations",
+    "url": "https://github.com/Aventerica89"
+  },
+  "plugins": [
+    {
+      "name": "1p-local-auth",
+      "source": {
+        "source": "github",
+        "repo": "Aventerica89/1p-local-auth"
+      },
+      "description": "Manage local dev OAuth credentials via 1Password. Test any auth provider on any branch without swapping env files."
+    }
+  ]
+}
