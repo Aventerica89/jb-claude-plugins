@@ -1,4 +1,5 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "jb-claude-plugins",
   "owner": {
     "name": "JBMD Creations",
@@ -7,11 +8,17 @@
   "plugins": [
     {
       "name": "1p-local-auth",
-      "source": {
-        "source": "github",
-        "repo": "Aventerica89/1p-local-auth"
-      },
-      "description": "Manage local dev OAuth credentials via 1Password. Test any auth provider on any branch without swapping env files."
+      "source": "./plugins/1p-local-auth",
+      "description": "Manage local dev OAuth credentials via 1Password. Test any auth provider on any branch without swapping env files.",
+      "version": "0.1.0",
+      "tags": ["1password", "oauth", "local-dev", "auth"]
+    },
+    {
+      "name": "obsidian-bridge",
+      "source": "./plugins/obsidian-bridge",
+      "description": "Zero-copy Obsidian vault over your ~/.claude/ knowledge base via symlinks. Browse memory, rules, skills, agents, and plans in Obsidian.",
+      "version": "1.0.0",
+      "tags": ["obsidian", "knowledge-base", "vault", "symlinks"]
     }
   ]
 }

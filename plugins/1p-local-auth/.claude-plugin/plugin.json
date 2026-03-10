@@ -1,0 +1,12 @@
+{
+  "name": "1p-local-auth",
+  "version": "0.1.0",
+  "description": "Manage local dev OAuth credentials via 1Password. Test any auth provider on any branch without swapping env files.",
+  "author": {
+    "name": "JBMD Creations",
+    "url": "https://github.com/Aventerica89"
+  },
+  "repository": "https://github.com/Aventerica89/1p-local-auth",
+  "license": "MIT",
+  "keywords": ["1password", "oauth", "local-dev", "auth", "google", "github", "op-run", "secrets", "nextjs", "better-auth"]
+}
