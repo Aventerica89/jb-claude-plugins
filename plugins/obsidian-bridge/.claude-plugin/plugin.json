@@ -1,8 +1,11 @@
 {
   "name": "obsidian-bridge",
+  "version": "1.0.0",
   "description": "Zero-copy Obsidian vault over your ~/.claude/ knowledge base via symlinks. One command to make all of Claude's memory, rules, skills, agents, contexts, and plans browsable in Obsidian — no duplication, no sync.",
   "author": {
-    "name": "JB",
+    "name": "JBMD Creations",
     "url": "https://github.com/Aventerica89"
-  }
+  },
+  "license": "MIT",
+  "keywords": ["obsidian", "knowledge-base", "vault", "symlinks", "memory"]
 }

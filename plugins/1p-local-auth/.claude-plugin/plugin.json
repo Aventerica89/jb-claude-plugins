@@ -6,7 +6,7 @@
     "name": "JBMD Creations",
     "url": "https://github.com/Aventerica89"
   },
-  "repository": "https://github.com/Aventerica89/1p-local-auth",
+  "repository": "https://github.com/Aventerica89/jb-claude-plugins",
   "license": "MIT",
   "keywords": ["1password", "oauth", "local-dev", "auth", "google", "github", "op-run", "secrets", "nextjs", "better-auth"]
 }
