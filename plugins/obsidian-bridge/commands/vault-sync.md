@@ -28,6 +28,7 @@ For each of these files, note whether it exists and its current line count:
 - `{vault_path}/All Contexts.md`
 - `{vault_path}/All Playgrounds.md`
 - `{vault_path}/All Commands.md`
+- `{vault_path}/All Resources.md`
 
 ## Step 3: Regenerate all dashboard pages
 
@@ -51,6 +52,8 @@ Overwrite all dashboard pages with fresh content.
 **All Playgrounds.md** — List each file in `{vault_path}/playgrounds/` with a `[[wikilink]]`.
 
 **All Commands.md** — List each `.md` file in `{vault_path}/commands/` in alphabetical order as a table with the file's `description` frontmatter field.
+
+**All Resources.md** — Regenerate the Dataview table header and static index table linking to each file in `{vault_path}/resources/`. List platform name, docs_url from frontmatter, and date last updated.
 
 ## Step 4: Report changes
 
