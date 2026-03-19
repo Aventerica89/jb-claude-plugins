@@ -11,14 +11,37 @@
       "source": "./plugins/1p-local-auth",
       "description": "Manage local dev OAuth credentials via 1Password. Test any auth provider on any branch without swapping env files.",
       "version": "0.1.0",
-      "tags": ["1password", "oauth", "local-dev", "auth"]
+      "tags": [
+        "1password",
+        "oauth",
+        "local-dev",
+        "auth"
+      ]
     },
     {
       "name": "obsidian-bridge",
       "source": "./plugins/obsidian-bridge",
       "description": "Zero-copy Obsidian vault over your ~/.claude/ knowledge base via symlinks. Browse memory, rules, skills, agents, and plans in Obsidian.",
       "version": "1.0.0",
-      "tags": ["obsidian", "knowledge-base", "vault", "symlinks"]
+      "tags": [
+        "obsidian",
+        "knowledge-base",
+        "vault",
+        "symlinks"
+      ]
+    },
+    {
+      "name": "skillforge",
+      "source": "./plugins/skillforge",
+      "description": "Deferred skill loading for Claude Code. Compress skills to stubs, load full content on demand. Saves ~88% of per-turn skill token overhead.",
+      "version": "1.0.0",
+      "tags": [
+        "skills",
+        "context",
+        "optimization",
+        "tokens",
+        "compression"
+      ]
     }
   ]
 }
