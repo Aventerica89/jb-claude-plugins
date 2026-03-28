@@ -1,0 +1,11 @@
+{
+  "name": "chains",
+  "version": "1.0.0",
+  "description": "Skill orchestration chains — bundle multiple skills into structured audit-fix-verify flows. First chain: /chains-ui-polish combines baseline-ui, frontend-design, 12-principles-of-animation, and fixing-motion-performance with 8 extra checks.",
+  "author": {
+    "name": "JB Cloud"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Aventerica89/jb-claude-plugins/tree/main/plugins/chains",
+  "keywords": ["chains", "orchestration", "ui", "polish", "audit", "accessibility", "animation"]
+}

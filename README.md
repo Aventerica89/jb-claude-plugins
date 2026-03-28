@@ -10,6 +10,7 @@ A collection of Claude Code plugins for professional developer workflows — sec
 | [1p-local-auth](plugins/1p-local-auth) | Local dev OAuth credentials via 1Password — test any auth provider on any branch |
 | [obsidian-bridge](plugins/obsidian-bridge) | Zero-copy Obsidian vault over `~/.claude/` — browse Claude's full knowledge base in Obsidian |
 | [skillforge](plugins/skillforge) | Deferred skill loading — compress skills to stubs, save ~88% per-turn token overhead |
+| [chains](plugins/chains) | Skill orchestration — bundle multiple skills into structured audit-fix-verify flows |
 
 ## Install the Marketplace
 
@@ -24,6 +25,7 @@ claude plugin install 1p-flawless@jb-claude-plugins
 claude plugin install 1p-local-auth@jb-claude-plugins
 claude plugin install obsidian-bridge@jb-claude-plugins
 claude plugin install skillforge@jb-claude-plugins
+claude plugin install chains@jb-claude-plugins
 ```
 
 If you see SSH errors during install:
