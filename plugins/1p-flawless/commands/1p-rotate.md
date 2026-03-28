@@ -1,6 +1,7 @@
 ---
 description: "Update a specific credential in the project's 1Password item and verify injection still works."
 argument-hint: [FIELD_NAME]
+allowed-tools: Read, Bash(op:*), Bash(jq:*)
 ---
 
 # /1p-rotate
@@ -22,7 +23,7 @@ op item get "<slug>" --vault "App Dev" --format json 2>/dev/null | jq -r '.field
 ```bash
 op item edit "<slug>" --vault "App Dev" "<FIELD_NAME>[password]=<new_value>" 2>&1
 ```
-See `references/vault-ops.md` for exact `op item edit` field syntax.
+See `${CLAUDE_PLUGIN_ROOT}/skills/setup/references/vault-ops.md` for exact `op item edit` field syntax.
 
 5. Verify the new value resolves:
 ```bash

@@ -1,6 +1,6 @@
 ---
 name: sac-setup
-description: Use when the user asks to "set up a service account", "stop Touch ID prompts for op CLI", "add OP_SERVICE_ACCOUNT_TOKEN", "configure no-prompt 1Password access", or wants `op` CLI calls to work without biometric prompts. Sets up OP_SERVICE_ACCOUNT_TOKEN in ~/.zshrc.
+description: This skill should be used when the user asks to "set up a service account", "stop Touch ID prompts for op CLI", "add OP_SERVICE_ACCOUNT_TOKEN", "configure no-prompt 1Password access", or wants `op` CLI calls to work without biometric prompts. Sets up OP_SERVICE_ACCOUNT_TOKEN in ~/.zshrc.
 version: 1.0.0
 ---
 

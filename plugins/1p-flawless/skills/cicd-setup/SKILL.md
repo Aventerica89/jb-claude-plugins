@@ -1,6 +1,6 @@
 ---
 name: cicd-setup
-description: Use when the user asks to "set up 1Password in CI", "add secrets to GitHub Actions", "wire load-secrets-action", "inject 1P secrets in GHA", or "configure 1Password for CI/CD". Generates a GitHub Actions step using 1password/load-secrets-action@v2 for the current project's secrets.
+description: This skill should be used when the user asks to "set up 1Password in CI", "add secrets to GitHub Actions", "wire load-secrets-action", "inject 1P secrets in GHA", or "configure 1Password for CI/CD". Generates a GitHub Actions step using 1password/load-secrets-action@v2 for the current project's secrets.
 version: 1.0.0
 ---
 

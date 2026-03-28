@@ -20,6 +20,15 @@ Triggered automatically by the setup skill's Phase 1 step, not directly by the u
 </commentary>
 </example>
 
+<example>
+Context: User wants to know what env vars a project uses before deciding on a vault strategy
+user: "what secrets does this project need in 1Password?"
+assistant: "I'll scan the project for env var usage and check your 1Password state."
+<commentary>
+User is explicitly asking for a discovery report without necessarily wanting to run setup. The secrets-scanner agent handles this autonomously without requiring full setup flow.
+</commentary>
+</example>
+
 model: inherit
 color: cyan
 tools: ["Read", "Glob", "Grep", "Bash"]

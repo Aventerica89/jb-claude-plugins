@@ -1,6 +1,6 @@
 ---
 name: setup
-description: Use when the user asks to "set up 1Password for this project", "wire 1p secrets", "create my .env template", "set up secret injection", "configure 1Password env vars", or wants to connect their project's environment variables to 1Password. Runs a two-phase workflow: autonomous discovery then interactive confirmation gates. Requires op CLI installed and authenticated.
+description: This skill should be used when the user asks to "set up 1Password for this project", "wire 1p secrets", "create my .env template", "set up secret injection", "configure 1Password env vars", or wants to connect their project's environment variables to 1Password. Runs a two-phase workflow: autonomous discovery then interactive confirmation gates. Requires op CLI installed and authenticated.
 version: 1.0.0
 ---
 
@@ -140,6 +140,16 @@ rm -f /tmp/1p-flawless-test.env
 ```
 
 If INJECT FAILED, show the error and help the user fix the `op://` references.
+
+---
+
+## Additional Resources
+
+### Reference Files
+
+- **`references/vault-ops.md`** — Exact `op` CLI syntax: vault create/list, item create/edit/get, common errors
+- **`references/naming.md`** — Slug rules, field naming, `{{ }}` vs bare `op://` syntax distinction, comment caveat
+- **`references/providers.md`** — OAuth provider env var names per framework (Better Auth, NextAuth v5)
 
 ---
 
