@@ -7,6 +7,19 @@
   },
   "plugins": [
     {
+      "name": "1p-flawless",
+      "source": "./plugins/1p-flawless",
+      "description": "Complete 1Password workflow for any project. Auto-discovers secrets, creates vault items, sets up op inject and op run templates, enforces safe naming conventions, SAC setup, and CI/CD.",
+      "version": "1.0.0",
+      "tags": [
+        "1password",
+        "secrets",
+        "env",
+        "local-dev",
+        "ci-cd"
+      ]
+    },
+    {
       "name": "1p-local-auth",
       "source": "./plugins/1p-local-auth",
       "description": "Manage local dev OAuth credentials via 1Password. Test any auth provider on any branch without swapping env files.",
