@@ -1,3 +1,11 @@
+<p align="center">
+  <a href="https://vaporforge.dev" target="_blank" rel="noopener">
+    <img src="https://vaporforge.dev/icon.svg" alt="VaporForge" height="36">
+  </a>
+  <br>
+  <sub>Part of the <a href="https://vaporforge.dev" target="_blank" rel="noopener"><strong>VaporForge</strong></a> collection</sub>
+</p>
+
 # SkillForge
 
 Deferred skill loading for Claude Code. Compress skills to stubs, load full content on demand.
