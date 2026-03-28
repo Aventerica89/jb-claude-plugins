@@ -11,7 +11,7 @@
 
 Every app needs secrets: database passwords, API keys, login credentials for Google/GitHub/Stripe. The old way: paste them into a `.env` file, hope you don't accidentally commit it to GitHub, manually copy them to every machine and teammate. One slip and your credentials are public.
 
-1p-flawless connects your project to [1Password](https://1password.com) so your secrets live in your password manager, not in files on disk. Claude handles the entire setup for you through a guided conversation. You answer a few questions. Everything else is automatic.
+1p-flawless connects your project to <a href="https://1password.com" target="_blank" rel="noopener">1Password</a> so your secrets live in your password manager, not in files on disk. Claude handles the entire setup for you through a guided conversation. You answer a few questions. Everything else is automatic.
 
 ---
 
@@ -120,9 +120,45 @@ Claude reads your project's 1Password item, generates the exact workflow step yo
   </picture>
 </p>
 
-- [1Password](https://1password.com) account (any plan)
-- [1Password CLI (`op`)](https://1password.com/downloads/) installed
+- <a href="https://1password.com" target="_blank" rel="noopener">1Password</a> account (any plan)
+- <a href="https://developer.1password.com/docs/cli/get-started/" target="_blank" rel="noopener">1Password CLI (`op`)</a> installed — see install instructions below
 - Authenticated: `op signin`
+
+---
+
+## Installing the 1Password CLI
+
+**macOS (Homebrew):**
+```bash
+brew install 1password-cli
+```
+
+**macOS (direct download):**
+
+Download from <a href="https://developer.1password.com/docs/cli/get-started/" target="_blank" rel="noopener">developer.1password.com/docs/cli/get-started</a>, then:
+```bash
+# Verify the install
+op --version
+```
+
+**Linux:**
+```bash
+# Debian / Ubuntu
+curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
+  sudo gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/$(dpkg --print-architecture) stable main" | \
+  sudo tee /etc/apt/sources.list.d/1password.list
+sudo apt update && sudo apt install 1password-cli
+```
+
+**Windows:**
+
+Download the installer from <a href="https://developer.1password.com/docs/cli/get-started/" target="_blank" rel="noopener">developer.1password.com/docs/cli/get-started</a>.
+
+**After installing, sign in:**
+```bash
+op signin
+```
 
 ---
 
