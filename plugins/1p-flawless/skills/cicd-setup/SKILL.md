@@ -67,3 +67,22 @@ Show where to insert in the workflow: before any step that uses the secrets, typ
 - No `checkout` step is required before `load-secrets` — it can be the first step
 - Shared credentials (Cloudflare, Stripe, etc.) live on their own 1P items — add manually if needed
 - Skip PUBLIC vars (`NEXT_PUBLIC_*`, `VITE_*`) — those don't need 1P injection
+
+---
+
+## Completion
+
+```
+CI/CD setup complete
+
+Snippet generated for: <slug> in App Dev (<N> fields)
+Insert after: actions/checkout in your workflow file
+
+GitHub secret required:
+  OP_SERVICE_ACCOUNT_TOKEN  →  gh secret set OP_SERVICE_ACCOUNT_TOKEN
+
+Next steps:
+  - Commit the workflow file
+  - Trigger a run to verify secrets resolve
+  - Check masked values appear as *** in workflow logs
+```

@@ -97,11 +97,15 @@ For sensitive values — use JSON template to avoid shell history exposure:
 # 1. Get template
 op item template get Login > /tmp/item-template.json
 
-# 2. Create item from template (pipe to avoid disk exposure)
+# 2. Create item from template
 op item create \
   --category Login \
   --title "project-slug" \
-  --vault "App Dev"
+  --vault "App Dev" \
+  --template /tmp/item-template.json
+
+# 3. Clean up
+rm /tmp/item-template.json
 ```
 
 Then add secrets via `op item edit` (see below).

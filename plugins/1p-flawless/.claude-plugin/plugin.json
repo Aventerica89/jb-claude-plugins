@@ -1,11 +1,12 @@
 {
   "name": "1p-flawless",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Complete 1Password workflow for Claude Code projects — vault setup, secret injection, SAC, CI/CD",
   "author": {
     "name": "JBMD Creations",
     "url": "https://github.com/Aventerica89"
   },
+  "homepage": "https://github.com/Aventerica89/jb-claude-plugins/tree/main/plugins/1p-flawless",
   "repository": "https://github.com/Aventerica89/jb-claude-plugins",
   "license": "MIT",
   "keywords": ["1password", "op", "secrets", "env", "local-dev", "ci-cd", "service-account", "op-inject", "op-run"]

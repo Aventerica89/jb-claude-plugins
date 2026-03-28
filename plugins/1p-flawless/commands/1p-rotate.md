@@ -1,7 +1,7 @@
 ---
 description: "Update a credential field in the project's 1Password item and verify it resolves."
 argument-hint: [FIELD_NAME]
-allowed-tools: Read, Bash
+allowed-tools: Bash, AskUserQuestion
 ---
 
 Rotate (update) a credential field in this project's 1Password item.
@@ -29,5 +29,3 @@ Verified: resolves successfully
 ```
 
 If `wc -c` returns 0 or the read errors: "Rotation may have succeeded but `op read` failed. Check `op signin` status and try `/1p-status`."
-
-$ARGUMENTS
