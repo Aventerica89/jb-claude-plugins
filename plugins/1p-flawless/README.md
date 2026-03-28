@@ -38,3 +38,13 @@ Complete 1Password workflow plugin for Claude Code. Covers vault setup, secret i
 ## Relationship to 1p-local-auth
 
 `1p-flawless` supersedes `1p-local-auth`. The older plugin covers OAuth dev credentials only (op run pattern). This plugin covers the full workflow: both op inject and op run, all secret types, SAC setup, and CI/CD. You can keep `1p-local-auth` installed alongside — it won't conflict.
+
+---
+
+<p align="center">
+  <a href="https://vaporforge.dev">
+    <img src="https://vaporforge.dev/icon.svg" alt="VaporForge" height="28">
+  </a>
+  <br>
+  Built with <a href="https://vaporforge.dev"><strong>VaporForge</strong></a>
+</p>

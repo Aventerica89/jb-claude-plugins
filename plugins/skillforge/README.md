@@ -79,3 +79,13 @@ Claude Code's skill system injects all skill descriptions into the system prompt
 ## License
 
 MIT
+
+---
+
+<p align="center">
+  <a href="https://vaporforge.dev">
+    <img src="https://vaporforge.dev/icon.svg" alt="VaporForge" height="28">
+  </a>
+  <br>
+  Built with <a href="https://vaporforge.dev"><strong>VaporForge</strong></a>
+</p>

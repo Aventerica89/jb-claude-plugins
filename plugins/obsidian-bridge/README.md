@@ -151,3 +151,13 @@ The vault is a view, not a copy.
 ## License
 
 MIT
+
+---
+
+<p align="center">
+  <a href="https://vaporforge.dev">
+    <img src="https://vaporforge.dev/icon.svg" alt="VaporForge" height="28">
+  </a>
+  <br>
+  Built with <a href="https://vaporforge.dev"><strong>VaporForge</strong></a>
+</p>

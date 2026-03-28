@@ -164,3 +164,13 @@ Other providers can be added manually during setup.
 ## License
 
 MIT — JBMD Creations
+
+---
+
+<p align="center">
+  <a href="https://vaporforge.dev">
+    <img src="https://vaporforge.dev/icon.svg" alt="VaporForge" height="28">
+  </a>
+  <br>
+  Built with <a href="https://vaporforge.dev"><strong>VaporForge</strong></a>
+</p>
