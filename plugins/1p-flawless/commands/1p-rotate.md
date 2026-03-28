@@ -1,7 +1,7 @@
 ---
 description: "Update a specific credential in the project's 1Password item and verify injection still works."
 argument-hint: [FIELD_NAME]
-allowed-tools: Read, Bash(op:*), Bash(jq:*)
+allowed-tools: Read, Bash
 ---
 
 # /1p-rotate

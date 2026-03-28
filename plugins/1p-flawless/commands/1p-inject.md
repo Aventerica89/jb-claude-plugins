@@ -1,6 +1,6 @@
 ---
 description: "Run op inject to generate .env.local from .env.local.tpl. Confirms vars written and warns on any gitignore issues."
-allowed-tools: Read, Bash(op:*), Bash(wc:*), Bash(grep:*)
+allowed-tools: Read, Bash
 ---
 
 # /1p-inject

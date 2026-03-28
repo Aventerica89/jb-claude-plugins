@@ -1,6 +1,6 @@
 ---
 description: "1Password health check for the current project — op CLI version, vault auth, item fields (masked), template status, npm scripts."
-allowed-tools: Read, Bash(op:*), Bash(jq:*)
+allowed-tools: Read, Bash
 ---
 
 # /1p-status
