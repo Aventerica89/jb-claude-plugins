@@ -12,6 +12,7 @@ claude plugin marketplace add Aventerica89/jb-claude-plugins
 
 | Plugin | Description |
 |--------|-------------|
+| [1p-flawless](plugins/1p-flawless) | Complete 1Password workflow — vault setup, op inject, op run, SAC, CI/CD |
 | [1p-local-auth](plugins/1p-local-auth) | Manage local dev OAuth credentials via 1Password |
 | [obsidian-bridge](plugins/obsidian-bridge) | Zero-copy Obsidian vault over ~/.claude/ via symlinks |
 
@@ -19,6 +20,7 @@ claude plugin marketplace add Aventerica89/jb-claude-plugins
 
 ```bash
 # Install one
+claude plugin install 1p-flawless@jb-claude-plugins
 claude plugin install 1p-local-auth@jb-claude-plugins
 claude plugin install obsidian-bridge@jb-claude-plugins
 
