@@ -1,49 +1,35 @@
 ---
-description: "Run op inject to generate .env.local from .env.local.tpl. Confirms vars written and warns on any gitignore issues."
+description: "Generate .env.local from .env.local.tpl using op inject. Confirms vars written, warns on gitignore issues."
 allowed-tools: Read, Bash
 ---
 
-# /1p-inject
-
 Generate `.env.local` from `.env.local.tpl` using `op inject`.
 
-## Steps
+**Template check:** !`ls .env.local.tpl 2>/dev/null && echo "FOUND" || echo "NOT FOUND"`
 
-1. Check `.env.local.tpl` exists:
-```bash
-ls .env.local.tpl 2>/dev/null || echo "NOT FOUND"
-```
-If missing: "No `.env.local.tpl` found. Run the `setup` skill first."
+If template is NOT FOUND, output: "No `.env.local.tpl` found. Run the `setup` skill first." and stop.
 
-2. Run inject:
-```bash
-op inject -i .env.local.tpl -o .env.local 2>&1
-```
+Run each step using the Bash tool:
 
-3. Verify output:
-```bash
-wc -l .env.local 2>/dev/null
-grep -c '=' .env.local 2>/dev/null
-```
+1. Inject: `op inject -i .env.local.tpl -o .env.local 2>&1`
+2. Count vars written: `grep -c '=' .env.local 2>/dev/null || echo 0`
+3. Read the var names and values: `cat .env.local 2>/dev/null`
+4. Gitignore check: `grep -qE '^\.env\.local$|^\.env\*' .gitignore 2>/dev/null && echo "GITIGNORE OK" || echo "WARNING: .env.local may not be gitignored"`
 
-4. Check .gitignore — warn if `.env.local` is NOT ignored:
-```bash
-grep -qE '^\.env\.local$|^\.env\*' .gitignore 2>/dev/null && echo "GITIGNORE OK" || echo "WARNING: .env.local may not be gitignored"
-```
+Output a summary listing each variable. Mask the value as `***` for any variable whose name contains SECRET, KEY, TOKEN, PASSWORD, PRIVATE, or API. Show others as-is.
 
-5. Output:
 ```
 Injected: .env.local (<N> vars written)
 
-NEXT_PUBLIC_APP_URL = visible (not a secret)
-SECRET_VAR          = *** (masked)
+NEXT_PUBLIC_APP_URL = https://example.com
+SECRET_API_KEY      = ***
 
 Gitignore: OK
 ```
 
 Common errors:
-- `[ERROR] 401` → run `op signin`
-- `invalid secret reference` → check `.env.local.tpl` for malformed `op://` paths
-- Var is empty but no error → wrong template syntax — `{{ }}` required for op inject (bare `op://` is for `op run` only)
+- `[ERROR] 401` — run `op signin`
+- `invalid secret reference` — malformed `op://` path in `.env.local.tpl`
+- Empty var, no error — wrong template syntax: `{{ }}` required for `op inject`; bare `op://` is for `op run` only
 
 $ARGUMENTS
