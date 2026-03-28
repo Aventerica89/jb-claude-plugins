@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/1password-wordmark-light.svg">
+    <img src="assets/1password-wordmark-dark.svg" alt="1Password" height="40">
+  </picture>
+</p>
+
 # 1p-flawless
 
 **Never type a password into your code again.**
@@ -105,6 +112,13 @@ Claude reads your project's 1Password item, generates the exact workflow step yo
 ---
 
 ## Prerequisites
+
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/1password-lock-light.svg">
+    <img src="assets/1password-lock-dark.svg" alt="1Password" height="48">
+  </picture>
+</p>
 
 - [1Password](https://1password.com) account (any plan)
 - [1Password CLI (`op`)](https://1password.com/downloads/) installed
