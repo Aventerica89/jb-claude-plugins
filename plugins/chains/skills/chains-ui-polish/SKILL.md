@@ -27,6 +27,8 @@ If issues are found, print them and ask:
 
 > "These design system issues affect all components. Fix at the system level before auditing the cluster?"
 
+**STOP. Wait for the user's response before proceeding.** Do not continue to Phase 1 until the user answers. Do not assume, guess, or "proceed anyway to save time." The question requires a decision.
+
 Apply approved system fixes. If no issues, state "System check passed" and proceed.
 
 ### Phase 1 — INVENTORY
@@ -42,7 +44,11 @@ Component Inventory:
 [5] Dropdown menu trigger
 ```
 
-Print the inventory. This numbering is used for all subsequent findings and the final recap.
+Print the inventory. **STOP. Confirm the inventory is correct before auditing.** Ask:
+
+> "N components identified. Anything missing or mis-scoped?"
+
+Wait for confirmation. Then proceed to Phase 2.
 
 ### Phase 2 — AUDIT
 
@@ -170,9 +176,9 @@ Use `+` for additions/fixes, `~` for "no issues found" in that category, `-` for
 
 ## Rules
 
+- **Three hard stops.** Phase 0 (if issues found), Phase 1 (inventory confirmation), and Phase 3 (fix approval) are all hard stops. When a phase says STOP — end the message. Do not continue in the same response. Do not say "but since..." or "let me proceed anyway." Wait for the user to respond.
 - Never skip a phase. If a phase produces zero findings, state that and proceed.
 - Always use the numbered component inventory established in Phase 1 — never renumber mid-flow.
-- Phase 3 is a hard stop. Do not auto-fix without user approval.
 - Fix UI before Motion (Phase 4a before 4b) — UI changes may resolve some motion findings.
 - The verify pass (Phase 5) is mandatory, not optional. Skipping it defeats the purpose.
 - Keep the recap (Phase 6) factual. Do not editorialize. List what changed per component.
